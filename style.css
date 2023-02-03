@@ -1,0 +1,81 @@
+/* Toggle color */
+.custom-control-input:checked + .custom-control-label {
+    border-color: #84706B;
+  }
+
+/* Normal mode styles */
+body {
+  background-color: #DCE8EF;
+  color: #000;
+  border-color: #84706B;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #3B393F;
+  color: #fff;
+  border-color: #84706B;
+}
+
+/* h1 */
+h1 {
+  text-align: center;
+}
+
+button#darkModeToggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Text input and output fields */
+.form-control {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    filter: blur(0.25px);
+  }
+
+  #copybtn {
+    float: right;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading {
+    animation: loading 1s infinite linear;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+
+  /* make iframe login corners rounded */
+  .rounded-corners {
+    border-radius: 7.5px;
+  }
+
+  .form-select {
+    width: 200px;
+    max-width: 100%;
+ }
+
+ .row {
+  display: flex;
+  align-items: center;
+}
+
+#language-select { 
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+  /* http://colormind.io/template/material-dashboard/ */

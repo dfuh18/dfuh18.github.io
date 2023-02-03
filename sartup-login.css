@@ -1,0 +1,17 @@
+/* centered images for startup-login-tab */
+#useitforany {
+    text-align: center;
+  }
+  #flashcardsexample{
+    text-align: center;
+  }
+  #explorefunctions{
+    text-align: center;
+  }
+
+.image-border{
+    border-radius: 10px; 
+    border: 6px solid #c3c7c9; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    filter: blur(0.25px);
+}
+
