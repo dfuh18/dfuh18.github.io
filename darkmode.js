@@ -5,11 +5,13 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     moon.style.display = 'inline-block';
     sun.style.display = 'none';
     // store the state in localStorage
+    document.querySelectorAll('.text-muted').forEach(el => el.classList.replace('text-muted', 'text-white'));
     localStorage.setItem("darkMode", "on");
   } else {
     moon.style.display = 'none';
     sun.style.display = 'inline-block';
     // store the state in localStorage
+    document.querySelectorAll('.text-white').forEach(el => el.classList.replace('text-white', 'text-muted'));
     localStorage.setItem("darkMode", "off");
   }
   // Toggle dark mode
@@ -22,9 +24,11 @@ document.addEventListener("DOMContentLoaded", function(){
     document.body.classList.add("dark-mode");
     document.querySelector('.fa-moon').style.display = 'inline-block';
     document.querySelector('.fa-sun').style.display = 'none';
+    document.querySelectorAll('.text-muted').forEach(el => el.classList.replace('text-muted', 'text-white'));
   }else{
     document.body.classList.remove("dark-mode");
     document.querySelector('.fa-moon').style.display = 'none';
     document.querySelector('.fa-sun').style.display = 'inline-block';
+    document.querySelectorAll('.text-white').forEach(el => el.classList.replace('text-white', 'text-muted'));
   }
 });
