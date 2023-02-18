@@ -29,8 +29,9 @@
   right: 40px;
   position: fixed;
   top: 90%;
-  animation: glowing-border 2s infinite; 
+  animation: glowing-border 3s infinite; 
   border-radius: 7.5px;
+  animation-timing-function: ease-in-out;
 }
 
 /* Define the animation keyframes */
