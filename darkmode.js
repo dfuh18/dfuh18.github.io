@@ -66,6 +66,6 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink2").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
     language.style.color = "black";
-    moon.style.color = "black";
+    sun.style.color = "black";
   }
 });
