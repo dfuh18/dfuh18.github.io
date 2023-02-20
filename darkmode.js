@@ -1,17 +1,36 @@
 document.getElementById('darkModeToggle').addEventListener('click', function() {
   const moon = this.querySelector('.fa-moon');
   const sun = this.querySelector('.fa-sun');
+  const language = document.getElementById('language');
   if (moon.style.display === 'none') {
-    moon.style.display = 'inline-block';
     sun.style.display = 'none';
+    moon.style.display = 'inline-block';
+    moon.style.color = "white";
     // store the state in localStorage
     document.querySelectorAll('.text-muted').forEach(el => el.classList.replace('text-muted', 'text-white'));
+    //change navbar color
+    document.getElementById("currentpagelink").classList.replace('link-secondary', 'link-light');
+    document.getElementById("difpagelink").classList.replace('link-dark', 'link-secondary');
+    document.getElementById("difpagelink1").classList.replace('link-dark', 'link-secondary');
+    document.getElementById("difpagelink2").classList.replace('link-dark', 'link-secondary');
+    document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
+    language.style.color = "white";
+
     localStorage.setItem("darkMode", "on");
   } else {
     moon.style.display = 'none';
     sun.style.display = 'inline-block';
+    sun.style.color = "black";
     // store the state in localStorage
     document.querySelectorAll('.text-white').forEach(el => el.classList.replace('text-white', 'text-muted'));
+
+    document.getElementById("currentpagelink").classList.replace('link-light', 'link-secondary');
+    document.getElementById("difpagelink").classList.replace('link-dark', 'link-secondary');
+    document.getElementById("difpagelink1").classList.replace('link-secondary', 'link-dark');
+    document.getElementById("difpagelink2").classList.replace('link-secondary', 'link-dark');
+    document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
+    language.style.color = "black";
+
     localStorage.setItem("darkMode", "off");
   }
   // Toggle dark mode

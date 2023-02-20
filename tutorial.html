@@ -16,21 +16,54 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="sartup-login.css">
 </head>
+
+<header class="p-3 mb-3 border-bottom">
+    <nav class="container" role="navigation">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img class="bi me-2" width="40" height="32" role="img" aria-label="StudyM8Ai" src="pngs/StudyMateAI-Logo.png">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 link-secondary" id="difpagelink1">Home</a></li>
+                <li><a href="/tutorial.html" class="nav-link px-2 link-dark disabled" id="difpagelink">Download</a></li>
+                <li><a href="/tutorial.html" class="nav-link px-2 link-secondary" id="currentpagelink">Tutorial</a></li>
+                <li><a href="/how_is_this_free.html" class="nav-link px-2 link-dark"   id="difpagelink2">How is this free?</a></li>
+                <li><a href="https://linktr.ee/studym8" class="nav-link px-2 link-dark" id="difpagelink3">About</a></li>
+            </ul>
+
+
+
+            <div class="">
+                <!--
+                            <select id="language-select" class="dropdown col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                            </select>
+                -->
+                <button class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-language" id="language"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownmenu">
+                    <li><option class="dropdown-item" value="en">English</option></li>
+                    <li><option class="dropdown-item" value="de">Deutsch</option></li>
+                </ul>
+
+                <button id="darkModeToggle" class="btn">
+                    <i class="fa fa-moon" aria-hidden="true"></i>
+                    <i class="fa fa-sun" aria-hidden="true" style="display: none"></i>
+                </button>
+
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
 <body>
-  <!-- Dark Mode Toggle -->
-  <div class="container">
-    <div class="row">
-      <div class="col"><button id="darkModeToggle" class="btn btn-light">
-          <i class="fa fa-moon" aria-hidden="true"></i>
-          <i class="fa fa-sun" aria-hidden="true" style="display: none"></i>
-        </button></div>
-    </div>
-    <div class="col"><select id="language-select">
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
-      </select></div>
-  </div>
-  </div>
   <!-- Page Title -->
   <div class="container">
     <br>
