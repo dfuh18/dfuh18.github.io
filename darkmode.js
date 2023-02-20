@@ -38,6 +38,9 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function(){
+  const moon = this.querySelector('.fa-moon');
+  const sun = this.querySelector('.fa-sun');
+  const language = document.getElementById('language');
   let darkMode = localStorage.getItem("darkMode");
   if(darkMode === "on"){
     document.body.classList.add("dark-mode");
@@ -50,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink2").classList.replace('link-dark', 'link-secondary');
     document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
     language.style.color = "white";
+    moon.style.color = "white";
+
   }else{
     document.body.classList.remove("dark-mode");
     document.querySelector('.fa-moon').style.display = 'none';
@@ -61,5 +66,6 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink2").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
     language.style.color = "black";
+    moon.style.color = "black";
   }
 });
