@@ -22,15 +22,6 @@ h1 {
   text-align: center;
 }
 
-/*
-button#darkModeToggle {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-*/
-
-/* Text input and output fields */
 .form-control {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     filter: blur(0.25px);
@@ -74,11 +65,15 @@ button#darkModeToggle {
   align-items: center;
 }
 
- /*
-#language-select { 
-  position: absolute;
-  right: 0;
-  top: 0
+.image-border{
+  border-radius: 10px; 
+  border: 6px solid #c3c7c9; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  filter: blur(0.25px);
 }
-*/
-  /* http://colormind.io/template/material-dashboard/ */
+
+.image-border-light{
+  border-radius: 7.5px;
+  border: 1.5px solid #c3c7c9; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  filter: blur(0.25px);
+}
