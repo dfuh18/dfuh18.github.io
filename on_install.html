@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>studym8ai.app/on_install</title>
+  <link rel="icon" type="image/png" href="pngs/StudyMateAI-Logo.png"/>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Link to Font Awesome library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous" />
+  <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sartup-login.css">
+</head>
+
+<header class="p-3 mb-3 border-bottom">
+    <nav class="container" role="navigation">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img class="bi me-2" width="40" height="40" role="img" aria-label="StudyM8Ai" src="pngs/StudyMateAI-Logo.png">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 link-secondary" id="currentpagelink">Home</a></li>
+                <li><a href="/tutorial.html" class="nav-link px-2 link-dark disabled" id="difpagelink">Download</a></li>
+                <li><a href="/tutorial.html" class="nav-link px-2 link-dark" id="difpagelink1">Tutorial</a></li>
+                <li><a href="/how_is_this_free.html" class="nav-link px-2 link-dark" id="difpagelink2">How is this free?</a></li>
+                <li><a href="https://linktr.ee/studym8" class="nav-link px-2 link-dark" id="difpagelink3">About</a></li>
+            </ul>
+
+
+
+            <div>
+                <button class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i id="language" class="fas fa-globe-africa"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownmenu">
+                    <li><option class="dropdown-item" value="en">English</option></li>
+                    <li><option class="dropdown-item" value="de">Deutsch</option></li>
+                </ul>
+
+                <button id="darkModeToggle" class="btn">
+                    <i class="fa fa-moon" aria-hidden="true"></i>
+                    <i class="fa fa-sun" aria-hidden="true" style="display: none"></i>
+                </button>
+
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<body>
+  <!-- Page Title -->
+  <div class="container">
+    <br>
+    <br>
+    <div><img class="logo" src="pngs/StudyMateAI-Logo.png"  style="margin: auto; display: block;" > </div>
+    <h1>StudyMateAI</h1>
+    <br>
+    <button id="scroll-to-getstarted" class="btn btn-secondary mt-3" style="margin: 0 auto; display: block; font-size: larger;">Quickstart</button>
+    <br>
+    <br>
+  </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3><p><b> Too lazy to perpare for your exercise-session?
+            <br>We have you covered!</b></p></h3>
+            <img src="pngs/studym8 excercise example.png" class="image-fluid image-border img_autofit" >
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col" id="useitforany">
+            <h3><p> <b> StudyMateAI may be desgined to help you study
+            <br> but you can use it for almost anything!</b></p></h3> 
+            <img src="pngs/studym8 creative question example.png" class="image-fluid image-border img_autofit" style="max-width:40%;">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+          <h3><p> <b> Too lazy to read all of that?</b></p></h3>
+          <img src="pngs/studym8 too lazy to read all that.png" class="image-fluid image-border img_autofit" >
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col" id="flashcardsexample">
+          <h3><p> <b> How about some flashcards for <br>that upcoming biology test?</b></p></h3>
+          <img src="pngs/studym8 flashcards.png" class="image-fluid image-border img_autofit" style="max-width:80%;" >
+        </div>
+        <div class="col" id="explorefunctions">
+          <h3><p> <b> Explore all of our functions <br> to make your life easier!</b></p></h3>
+          <img src="pngs/studym8 explore our functions.png" class="image-fluid image-border img_autofit " style="max-width:80%;" >
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div id="howto"><h1> <b>How to get started:</b></h1><br> <br></div>
+      <div class="col align-self-baseline" id="howto1">
+        <h1 style="text-align: start;"><b>1.</b></h1><h3><b>Register on Openai.com <br>
+        or sign in with your account</b></h3>
+        <img src="pngs/How to start 1.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+      </div>
+      <div class="col" id="howto2">
+        <img src="pngs/How to start 2.png" class="image-fluid image-border img_autofit" >
+      </div>
+      <div class="col">
+        <h3>  <p> This process requires your email and phonenumber. <br>
+        <br>
+        This information is needed to verify that you are a real user. In return  you get a free 3-month trial 😎</p></h3>
+        <h5><p>Don't worry you do not enter an subscription service after the free trial has ended! For
+          deatils see: <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a> 
+        </p></h5>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <h4 style="text-align: center;"><p> Only 2 steps left and you are ready to go!</p></h4>
+      <div class="col align-self-baseline">
+        <h1 style="text-align: start;"><b>2.</b></h1><h5><p>Navigate to: <a href="https://platform.openai.com/account/api-keys">https://platform.openai.com/account/api-keys</a> <br>
+        and click on "Create  new secret key"</p></h5>
+        <img src="pngs/How to start 4.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+      </div>
+      <div class="col">
+        <br>
+        <h1 style="text-align: start;"><b>3.</b></h1><h4><p> All that's left to do is copy and paste the key into <br>
+          the StudyMateAI extension 🚀<br>
+        if you have it installed just use <code>ctrl+shift+y</code></p></h5>
+        <img src="pngs/How to start 5.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+        <br>
+        <br>
+      </div>
+    </div> 
+</div>     
+
+<img class="icon" src=pngs\StudyMateAI-Logo.png width="50" height="50" >
+<div class="mouse-icon">
+  <i class="fa fa-mouse-pointer"></i>
+</div>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://studym8ai.app/tutorial.html" class="nav-link px-2 text-muted">Tutorial</a></li>
+      <li class="nav-item"><a href="https://studym8ai.app/how_is_this_free.html" class="nav-link px-2 text-muted">How is this Free?</a></li>
+      <li class="nav-item"><a href="https://www.buymeacoffee.com/studyM8" class="nav-link px-2 text-muted">Coffee?</a></li>
+      <li class="nav-item"><a href="https://linktr.ee/studym8" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2023 Gian Hofmann, Tom Sommerfeld</p>
+    <p class="text-center text-muted" id="version"></p>
+</footer>
+</body>
+<script src=jquery.js></script>
+<script src="bootstrap.js"></script>
+<script src="darkmode.js"></script>
+<script src="startup-login-tab.js"></script>
+
+</html>
