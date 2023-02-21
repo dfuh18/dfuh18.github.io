@@ -40,6 +40,9 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function(){
+  const moon = this.querySelector('.fa-moon');
+  const sun = this.querySelector('.fa-sun');
+  const language = document.getElementById('language');
   let darkMode = localStorage.getItem("darkMode");
   if(darkMode === "on"){
     document.body.classList.add("dark-mode");
@@ -54,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.getElementById("download").style.backgroundColor = "#lightslategrey";
     language.style.color = "white";
+    moon.style.color = "white";
+
   }else{
     document.body.classList.remove("dark-mode");
     document.querySelector('.fa-moon').style.display = 'none';
@@ -68,5 +73,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.getElementById("download").style.backgroundColor = "#edf5ff";
     language.style.color = "black";
+    sun.style.color = "black";
   }
 });
