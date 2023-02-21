@@ -76,6 +76,85 @@
     <br>
     <br>
   </div>
+
+  <div class="container">
+      <h1>How to:</h1>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Get Definitions
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                      <strong>How to use StudyMateAi to make complex text comprehensive.</strong><br>
+                      It is fairly easy: <br><br>
+                      &emsp;1. Select the word you want further explanation on. This could be a single word, a phrase or the name of a concept.<br>
+                      &emsp;2. Right click and navigate to 'StudyMateAi' and choose 'Definition'<br>
+                      &emsp;3. Open StudyMateAi via the magic sidebar or your popup (default shortcut: <code>ctrl + shift + x</code>)<br>
+                      &emsp;4. Click 'Send request'
+                      <input type="text" class="form-control" id="pdf-document"
+                             placeholder="DNA" readonly style="margin-top: 1%">
+                      <section class="form-select" style="margin-top: 1%">
+                          <option value="Define" selected disabled>Definition</option>
+                      </section>
+                      <div id="loader1" class="loading" style="display: none; margin-top: 1%"></div>
+                      <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
+                      <textarea readonly id="deftext" style="margin-top: 1%" class="form-control"></textarea>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Summarize text
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Create Bulletpoints
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapse">
+                      Answer Questions
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                      Create Flashcards
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 <div class="container">
     <div class="row">
         <div class="col">
@@ -86,60 +165,97 @@
     </div>
 
 
-    <div class="container marketing" >
-
-        <!-- START THE FEATURETTES -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row featurette" style="background: radial-gradient(circle, white, #DCE8EF);">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Too lazy to read all of that? <span class="text-muted">We got you!</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="pngs/studym8%20too%20lazy%20to%20read%20all%20that.png" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" alt="Too lazy to read">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3><p><b> Too lazy to perpare for your exercise-session?
+                    <br>We have you covered!</b></p></h3>
+                <img src="pngs/studym8 excercise example.png" class="image-fluid image-border img_autofit" >
             </div>
         </div>
-
         <br>
         <br>
         <br>
         <br>
-        <br>
-
-        <div class="row featurette" style="background: radial-gradient(circle, white, #DCE8EF);">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="pngs/studym8%20flashcards.png" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img" >
+        <div class="row">
+            <div class="col" id="useitforany">
+                <h3><p> <b> StudyMateAI may be desgined to help you study
+                    <br> but you can use it for almost anything!</b></p></h3>
+                <img src="pngs/studym8 creative question example.png" class="image-fluid image-border img_autofit" style="max-width:40%;">
             </div>
         </div>
-
         <br>
         <br>
         <br>
         <br>
-        <br>
-
-        <div class="row featurette" style="background: radial-gradient(circle, white, #DCE8EF);">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="pngs/studym8%20explore%20our%20functions.png" class="featurette-image img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500">
+        <div class="row">
+            <div class="col">
+                <h3><p> <b> Too lazy to read all of that?</b></p></h3>
+                <img src="pngs/studym8 too lazy to read all that.png" class="image-fluid image-border img_autofit" >
             </div>
         </div>
-
-
-
-        <!-- /END THE FEATURETTES -->
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col" id="flashcardsexample">
+                <h3><p> <b> How about some flashcards for <br>that upcoming biology test?</b></p></h3>
+                <img src="pngs/studym8 flashcards.png" class="image-fluid image-border img_autofit" style="max-width:80%;" >
+            </div>
+            <div class="col" id="explorefunctions">
+                <h3><p> <b> Explore all of our functions <br> to make your life easier!</b></p></h3>
+                <img src="pngs/studym8 explore our functions.png" class="image-fluid image-border img_autofit " style="max-width:80%;" >
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div id="howto"><h1> <b>How to get started:</b></h1><br> <br></div>
+            <div class="col align-self-baseline" id="howto1">
+                <h1 style="text-align: start;"><b>1.</b></h1><h3><b>Register on Openai.com <br>
+                or sign in with your account</b></h3>
+                <img src="pngs/How to start 1.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+            </div>
+            <div class="col" id="howto2">
+                <img src="pngs/How to start 2.png" class="image-fluid image-border img_autofit" >
+            </div>
+            <div class="col">
+                <h3>  <p> This process requires your email and phonenumber. <br>
+                    <br>
+                    This information is needed to verify that you are a real user. In return  you get a free 3-month trial 😎</p></h3>
+                <h5><p>Don't worry you do not enter an subscription service after the free trial has ended! For
+                    deatils see: <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a>
+                </p></h5>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <h4 style="text-align: center;"><p> Only 2 steps left and you are ready to go!</p></h4>
+            <div class="col align-self-baseline">
+                <h1 style="text-align: start;"><b>2.</b></h1><h5><p>Navigate to: <a href="https://platform.openai.com/account/api-keys">https://platform.openai.com/account/api-keys</a> <br>
+                and click on "Create  new secret key"</p></h5>
+                <img src="pngs/How to start 4.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+            </div>
+            <div class="col">
+                <br>
+                <h1 style="text-align: start;"><b>3.</b></h1><h4><p> All that's left to do is copy and paste the key into <br>
+                the StudyMateAI extension 🚀<br>
+                if you have it installed just use <code>ctrl+shift+y</code></p></h5>
+                <img src="pngs/How to start 5.png" class="image-fluid image-border img_autofit" style="max-width:80%;">
+                <br>
+                <br>
+            </div>
+        </div>
     </div>
+
+</div>
 
 <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">

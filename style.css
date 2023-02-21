@@ -77,3 +77,22 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   filter: blur(0.25px);
 }
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation: loading 1s infinite linear;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
