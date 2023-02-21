@@ -16,7 +16,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
     language.style.color = "white";
 
-    document.getElementById("download").style.backgroundColor = "lightslategrey";
+    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "lightslategrey";
     localStorage.setItem("darkMode", "on");
   } else {
     moon.style.display = 'none';
@@ -32,7 +32,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
     language.style.color = "black";
 
-    document.getElementById("download").style.backgroundColor = "#edf5ff";
+    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff";
     localStorage.setItem("darkMode", "off");
   }
   // Toggle dark mode
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink2").classList.replace('link-dark', 'link-secondary');
     document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
 
-    document.getElementById("download").style.backgroundColor = "#lightslategrey";
+    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "#lightslategrey";
     language.style.color = "white";
     moon.style.color = "white";
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
 
 
-    document.getElementById("download").style.backgroundColor = "#edf5ff";
+    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff";
     language.style.color = "black";
     sun.style.color = "black";
   }
