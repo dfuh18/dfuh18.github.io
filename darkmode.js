@@ -16,6 +16,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
     language.style.color = "white";
 
+    document.getElementById("download").style.backgroundColor = "lightslategrey";
     localStorage.setItem("darkMode", "on");
   } else {
     moon.style.display = 'none';
@@ -31,6 +32,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
     language.style.color = "black";
 
+    document.getElementById("download").style.backgroundColor = "#edf5ff";
     localStorage.setItem("darkMode", "off");
   }
   // Toggle dark mode
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink1").classList.replace('link-dark', 'link-secondary');
     document.getElementById("difpagelink2").classList.replace('link-dark', 'link-secondary');
     document.getElementById("difpagelink3").classList.replace('link-dark', 'link-secondary');
+
+    document.getElementById("download").style.backgroundColor = "#lightslategrey";
     language.style.color = "white";
   }else{
     document.body.classList.remove("dark-mode");
@@ -60,6 +64,9 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink1").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink2").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
+
+
+    document.getElementById("download").style.backgroundColor = "#edf5ff";
     language.style.color = "black";
   }
 });
