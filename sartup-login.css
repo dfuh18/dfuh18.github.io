@@ -1,17 +1,9 @@
-/* centered images for startup-login-tab */
-#useitforany {
-    text-align: center;
-  }
-  #flashcardsexample{
-    text-align: center;
-  }
-  #explorefunctions{
-    text-align: center;
-  }
-
+/* centered headings for startup-login-tab */
 .img_autofit{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  margin: auto; 
+  display: block;
 }
 
 .logo{
