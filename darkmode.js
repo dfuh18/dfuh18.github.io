@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("NOcurrentpagelink").classList.replace('link-dark', 'link-secondary');
     }
 
-    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "#lightslategrey";
+    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "#lightslategrey"; // TODO, not working!
     language.style.color = "white";
     moon.style.color = "white";
 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("NOcurrentpagelink").classList.replace('link-secondary', 'link-dark');
     }
 
-    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff";
+    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff"; // TODO, not working!
     language.style.color = "black";
     sun.style.color = "black";
   }
