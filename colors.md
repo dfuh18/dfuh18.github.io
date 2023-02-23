@@ -1,4 +1,4 @@
-# Farbschema StudyMateAi
+# Farbschema StudyMateAI
 
 ## Basis Farben:
 ### Hell:

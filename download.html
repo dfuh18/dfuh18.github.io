@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>studym8ai.app</title>
+    <title>studym8ai.app/download</title>
     <link rel="icon" type="image/png" href="pngs/StudyMateAI-Logo.png"/>
     <!-- Link to Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="sartup-login.css">
 </head>
 
-<header class="p-3 mb-3 border-bottom">
+<header class="p-3 mb-3 ">
     <nav class="container" role="navigation">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
@@ -47,27 +47,17 @@
                     <i class="fa fa-moon" aria-hidden="true"></i>
                     <i class="fa fa-sun" aria-hidden="true" style="display: none"></i>
                 </button>
-
-                <!--
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
-                -->
-                <!--
-                <button class="btn">
-                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="studyM8" data-color="#FFDD00" data-emoji=""  data-font="Poppins" data-text="Support us" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-                </button>
-                -->
             </div>
-
         </div>
     </nav>
+    <hr>
 </header>
 
 <body>
 <div class="container my-5">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" style="background-color:#edf5ff;" id='download'>
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">Download StudyMateAi for Chrome/Edge/Opera</h1>
+        <h1 class="display-4 fw-bold lh-1">Download StudyMateAI for Chrome/Edge/Opera</h1>
        <p class="lead">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" onclick='window.open("https://chrome.google.com/webstore/detail/studymateai/ojdbfphobphdlgloniofafojolaalnlm")'>Download</button>
@@ -83,7 +73,7 @@
         document.write("<div class=\"container my-5\">\n" +
             "    <div class=\"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg\" style=\"background-color:#edf5ff;\" id=\'download\'>\n" +
             "      <div class=\"col-lg-7 p-3 p-lg-5 pt-lg-3\">\n" +
-            "        <h1 class=\"display-4 fw-bold lh-1\">Download StudyMateAi for Firefox</h1>\n" +
+            "        <h1 class=\"display-4 fw-bold lh-1\">Download StudyMateAI for Firefox</h1>\n" +
             "        <p class=\"lead\">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>\n" +
             "        <div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\">\n" +
             "          <button type=\"button\" class=\"btn btn-primary btn-lg px-4 me-md-2 fw-bold\">Download</button>\n" +
@@ -96,6 +86,22 @@
             "  </div>");
     }
 </script>
+
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center pb-3 mb-3">
+     <li class="nav-item"><a href="https://studym8ai.app/" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="https://studym8ai.app/tutorial.html" class="nav-link px-2 text-muted">Tutorial</a></li>
+      <li class="nav-item"><a href="https://studym8ai.app/how_is_this_free.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+      <li class="nav-item"><a href="https://www.buymeacoffee.com/studyM8" class="nav-link px-2 text-muted">Coffee?</a></li>
+      <li class="nav-item"><a href="https://linktr.ee/studym8" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <hr>
+    <p class="text-center text-muted">© 2023 Gian Hofmann, Tom Sommerfeld</p>
+    <p class="text-center text-muted" id="version"></p>
+    <p class="text-center text-muted"><a class="text-muted" style="text-decoration: none;" href="">Impressum</a></p>
+    
+</footer>
+
 </body>
 <script src=jquery.js></script>
 <script src="bootstrap.js"></script>
