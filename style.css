@@ -98,7 +98,7 @@ h1 {
 }
 
  .clean_links{
-  text-decoration: none; /* remove underline */
+  /*text-decoration: none; /* remove underline */
   color: inherit; /* inherit the color from the parent element */
   font-weight: normal; /* reset the font weight */
 }
