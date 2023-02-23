@@ -6,11 +6,6 @@
   display: block;
 }
 
-.logo{
-  width: 100px;
-  height: 100px;
-}
-
 .icon {
   right: 40px;
   position: fixed;
@@ -51,4 +46,13 @@
   100% {
     transform: translateX(0);
   }
+}
+
+
+/* needed when mouse/icon animation is present in order for the footer border to take full width of screeen*/
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100;
 }
