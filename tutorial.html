@@ -57,45 +57,12 @@
 <body>
   <!-- Page Title -->
 
-  <div style="position: relative;" data-draggable="true" draggable="false" class="">
-      <section draggable="false" class="overflow-hidden pt-0" data-v-271253ee=""><section class="mb-10 overflow-hidden">
-          <!-- Background image -->
-          <div class="px-4 py-5 px-md-5 text-center bg-image" style="background-image: url(pngs/pexels-pixabay-301920.jpg); height: 500px; background-size: cover; background-position: 50% 50%;" aria-controls="#picker-editor">
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
-              <div class="container h-100">
-                  <div class="row d-flex justify-content-center align-items-center h-100">
-                      <div class="col-lg-10">
-                          <div class="text-white pb-5">
-                              <h1 class="my-md-5 mb-4 px-5 display-3 fw-bold ls-tight">
-                                  <span style="color: white">Enhance your learning</span> <br>
-                                  <span style="color: white">Experince</span>
-                              </h1>
-                              <a class="btn btn-outline-light btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0 me-md-2" href="#!" role="button" aria-controls="#picker-editor" draggable="false" style="min-width: auto;">Quickstart</a>
-                              <a class="btn btn-link btn-lg btn-rounded py-3 px-5 mb-2 mb-md-0" style="background-color: transparent; min-width: auto; color: white" href="#!" role="button" aria-controls="#picker-editor" draggable="false">Learn more</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-          <!-- Rounded Corners picture -->
-          <div class="" style=" height: 30px; margin-top: -30px; transform: scale(2); transform-origin: top center; color: #DCE8EF; ">
-              <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z" fill="currentColor"></path>
-              </svg>
-          </div>
-          <!-- Background image -->
-      </section>
-      </section><!---->
-  </div>
-
-
   <section draggable="false" class="container pt-5" data-v-271253ee="">
       <section class="mb-10">
           <h2 class="fw-bold mb-5 text-center">How to use StudyMateAI's Features<br></h2>
           <div class="row gx-lg-5 mb-5 align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
-                  <textarea type="text" class="form-control" id="pdf-document"
+                  <textarea type="text" class="form-control"
                             readonly style="margin-top: 1%">DNA</textarea>
                   <section class="form-select" style="margin-top: 1%">
                       <option value="Define" selected disabled>Definition</option>
@@ -104,11 +71,11 @@
                   <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
                   <textarea readonly id="deftext" style="margin-top: 1%" class="form-control"></textarea></div>
               <div class="col-md-6 mb-4 mb-md-0">
-                  <h3 class="fw-bold">Fast and Simple explanations</h3>
+                  <h3 class="fw-bold" id="definition">Definition</h3>
                   <div class="mb-2 text-danger small">
-                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Definitions</span>
+                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Fast and Simple explanations</span>
                   </div>
-                  <p class="text-muted">                      It is fairly easy: <br><br>
+                  <p class="text-muted">This feature explains the meaning of a word, phrase, or concept. It provides a clear and concise explanation of what something is or means, and helps to establish a common understanding of the term being defined. To get the definition of the selected text follow these simple steps: <br><br>
                       &emsp;1. Select the word you want further explanation on.<br>&emsp;&emsp;This could be a single word, a phrase or the name of a concept.<br><br>
                       &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Definition'.<br><br>
                       &emsp;3. Open StudyMateAI via the magic sidebar or <a href="#" data-bs-toggle="tooltip" data-bs-title="shortcut: ctrl + shift + y"> your popup.</a><br><br>
@@ -174,12 +141,12 @@ As machines become increasingly capable, tasks considered to require 'intelligen
 'AI is a field of research that studies intelligence demonstrated by machines, such as speech recognition, computer vision, translation, and other mappings of inputs. AI applications include web search engines, recommendation systems, self-driving cars, and competing in strategic game systems. AI was founded in 1956 and has experienced several waves of optimism and disappointment. It has used many approaches, such as simulating the brain, modeling human problem solving, and formal logic. In the 21st century, machine learning has been successful in solving many challenging problems. AI has raised philosophical arguments about the mind and ethical consequences of creating artificial intelligence, and has been explored in myth, fiction, and philosophy since antiquity. AI research has been funded by the US Department of Defense, and the field has grown since the 1950s with the two visions of symbolic AI and connectionist approaches. AI has been used since the 2000s to solve specific problems and is used by one in five companies.'; },1000);">Send request</button>
                   <textarea readonly id="deftext2" style="margin-top: 1%" class="form-control" rows="7"></textarea> </div>
               <div class="col-md-6 mb-4 mb-md-0">
-                  <h3 class="fw-bold">Make complex text comprehensive</h3>
+                  <h3 class="fw-bold" id="summarize">Summarize</h3>
                   <div class="mb-2 text-primary small">
-                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Text understanding</span>
+                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Make complex text comprehensive</span>
                   </div>
-                  It is pretty straight forward:<br><br>
-                  <p class="text-muted">&emsp;1. Select the text you want to (short) summarize.<br>&emsp;&emsp;Please note that we can currently handle requests with a <strong>maximum of 1000 words</strong>.<br><br>
+                  <p class="text-muted">This feature provides you with a concise and clear understanding of the key points or main ideas of the original text. You can choose between a longer version, which will tend to paraphrase shorter texts or reduce the input to its fundamentals.<br><br>
+                      &emsp;1. Select the text you want to (short) summarize.<br>&emsp;&emsp;Please note that we can currently handle requests with a <strong>maximum of 1000 words</strong>.<br><br>
                       &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Summarize Selection' or<br>&emsp;&emsp;'Short Summary'.<br><br>
                       &emsp;3. Open StudyMateAI via the magic sidebar or <a href="#" data-bs-toggle="tooltip" data-bs-title="shortcut: ctrl + shift + y"> your popup.</a><br><br>
                       &emsp;4. Click 'Send request'</p><br>
@@ -190,32 +157,133 @@ As machines become increasingly capable, tasks considered to require 'intelligen
 
           <div class="row gx-lg-5 mb-5 align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
-                  <img src="https://images.unsplash.com/photo-1553775927-a071d5a6a39a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDR8fGFmcmljYXxlbnwwfHx8fDE2NDU2MDY2NjU&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080" class="w-100 shadow-4-strong rounded-4 mb-4" alt="" aria-controls="#picker-editor" draggable="false">
+                  <textarea type="text" class="form-control"
+                            readonly style="margin-top: 1%" cols="100" rows="10">Physalis peruviana is a species of plant in the nightshade family (Solanaceae) native to Colombia, Ecuador and Peru. It is commonly known as Cape gooseberry, goldenberry or Peruvian groundcherry,[2][3][4][5] as poha in Hawaii, and as Harankash in Egypt, while in its countries of origin it is called aguaymanto, uvilla or uchuva, in addition to numerous indigenous and regional names.
+
+The history of P. peruviana cultivation in South America can be traced to the Inca Empire.[6][7] It has been cultivated in England since the late 18th century, and in South Africa in the Cape of Good Hope since at least the start of the 19th century.[2] Widely introduced in the 20th century, P. peruviana is now cultivated or grows wild across the world in temperate and tropical regions.[3]</textarea>
+                  <section class="form-select" style="margin-top: 1%">
+                      <option value="Bulletpoints" selected disabled>Create Bulletpoints</option>
+                  </section>
+                  <div id="loader3" class="loading" style="display: none; margin-top: 1%"></div>
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader3').style.display = 'block'; setTimeout(function(){ document.getElementById('loader3').style.display = 'none'; document.getElementById('bulltext').innerText = '- Physalis peruviana is a species of plant in the nightshade family native to Colombia, Ecuador, and Peru. \n- Commonly known as Cape gooseberry, goldenberry, or Peruvian groundcherry.\n- Cultivated by the Inca Empire, and in England and South Africa since the late 18th and early 19th centuries respectively.\n- Widely introduced in the 20th century and now cultivated or grows wild across the world.'; },1000);">Send request</button>
+                  <textarea readonly id="bulltext" style="margin-top: 1%" class="form-control" cols="70" rows="15"></textarea>
               </div>
               <div class="col-md-6 mb-4 mb-md-0">
-                  <h3 class="fw-bold">You will meet the locals</h3>
+                  <h3 class="fw-bold" id="bulletpoints">Bulletpoints</h3>
                   <div class="mb-2 text-warning small">
-                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>People</span>
+                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Ready to use in presentations and summaries</span>
                   </div>
-                  <p class="text-muted">Sed sollicitudin purus sed nulla dignissim ullamcorper. Aenean tincidunt vulputate libero, nec imperdiet sapien pulvinar id. Nullam scelerisque odio vel lacus faucibus, tincidunt feugiat augue ornare. Proin ac dui vel lectus eleifend vestibulum et lobortis risus. Nullam in commodo sapien. Curabitur ut erat congue sem finibus eleifend egestas eu metus. Sed ut dolor id magna rutrum ultrices ut eget libero. Duis vel porttitor odio. Ut pulvinar sed turpis ornare tincidunt. Donec luctus, mi euismod dignissim malesuada, lacus lorem commodo leo, tristique blandit ante mi id metus. Integer et vehicula leo, vitae interdum lectus. Praesent nulla purus, commodo at euismod nec, blandit ultrices erat. Aliquam eros ipsum, interdum et mattis vitae, faucibus vitae justo. Nulla condimentum hendrerit leo, in feugiat ipsum condimentum ac. Maecenas sed blandit dolor.</p>
-                  <a class="btn   btn-primary" href="#" role="button" aria-controls="#picker-editor" draggable="false">Read more</a>
+                  <p class="text-muted">Bullet points are a type of formatting used to present information in a concise and organized way. They are typically used to highlight key points or important information in a list format.<br><br>
+                      &emsp;1. Select the text you want to summarize in bulletpoints.<br>&emsp;&emsp;Please note that we can currently handle requests with a <strong>maximum of 1000 words</strong>.<br><br>
+                      &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Create Bulletpoints'.<br><br>
+                      &emsp;3. Open StudyMateAI via the magic sidebar or <a href="#" data-bs-toggle="tooltip" data-bs-title="shortcut: ctrl + shift + y"> your popup.</a><br><br>
+                      &emsp;4. Click 'Send request'</p>
               </div>
           </div>
 
           <hr>
 
+          <div class="row gx-lg-5 mb-5 flex-lg-row-reverse align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0">
+              <textarea class="form-control"
+                        readonly style="margin-top: 1%;">Write down five reasons why you should start your new business now; then write down five reasons why it is a bad time. Do the positives outweigh the negatives?</textarea>
+                  <section class="form-select" style="margin-top: 1%">
+                      <option value="Define" selected disabled>Answer Question</option>
+                  </section>
+                  <div id="loader4" class="loading" style="display: none; margin-top: 1%"></div>
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader4').style.display = 'block'; setTimeout(function(){ document.getElementById('loader4').style.display = 'none'; document.getElementById('deftext4').innerText = '\n'+
+'\n'+
+'Five Reasons to Start Your New Business Now:\n'+
+'\n'+
+'1. The Economy is Recovering: The economy is improving, which means there is more money available to fund new businesses.\n'+
+'\n'+
+'2. Low Startup Costs: With the right strategies, it is possible to start a business with very little capital.\n'+
+'\n'+
+'3. Increased Access to Technology: Technology has made it easier than ever to start and manage a business.\n'+
+'\n'+
+'4. More Opportunities: There are more opportunities for new businesses to succeed than ever before.\n'+
+'\n'+
+'5. Tax Benefits: Starting a business can provide a range of tax benefits that can help you save money.\n'+
+'\n'+
+'Five Reasons Why It is a Bad Time:\n'+
+'\n'+
+'1. High Competition: There is a lot of competition in the market, which can make it difficult for new businesses to stand out.\n'+
+'\n'+
+'2. Uncertain Economic Climate: The economic climate is uncertain and can make it difficult to predict the success of a business.\n'+
+'\n'+
+'3. Lack of Resources: It can be difficult to find the resources needed to start and manage a business.\n'+
+'\n'+
+'4. Increased Regulations: Regulations have increased, which can add to the cost of starting a business.\n'+
+'\n'+
+'5. Unpredictable Markets: Markets can be unpredictable, which can make it difficult to plan for the future.\n'+
+'\n'+
+'Do the positives outweigh the negatives?\n'+
+'\n'+
+'Yes, the positives outweigh the negatives. Starting a business now can provide many benefits, from tax savings to increased access to technology. Although there are some risks associated with starting a business now, the potential rewards can outweigh the risks.'; },1000);">Send request</button>
+                  <textarea readonly id="deftext4" style="margin-top: 1%" class="form-control" rows="7"></textarea> </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                  <h3 class="fw-bold" id="question">Answer Question</h3>
+                  <div class="mb-2 text-primary small">
+                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Answer practise questions or enter your own prompts</span>
+                  </div>
+                  This feature can be used in different ways, try to enter your own questions into the intput field. The 'Answer Question' option is sort of a wildcard, but to use its main function follow these steps:<br><br>
+                  <p class="text-muted">&emsp;1. Select the question you want the answer to.<br><br>
+                      &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Answer Question'.<br><br>
+                      &emsp;3. Open StudyMateAI via the magic sidebar or <a href="#" data-bs-toggle="tooltip" data-bs-title="shortcut: ctrl + shift + y"> your popup.</a><br><br>
+                      &emsp;4. Click 'Send request'</p><br>
+              </div>
+          </div>
+
+          <hr>
+
+          <div class="row gx-lg-5 mb-5 align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0">
+                  <textarea type="text" class="form-control" cols="50" rows="10"
+                            readonly style="margin-top: 1%">Singapore Changi Airport, commonly known as Changi Airport (IATA: SIN, ICAO: WSSS), is a major international airport that serves Singapore, and is one of the largest transportation hubs in Asia. As one of the world's busiest airports by international passenger and cargo traffic, it has been rated as the 'World's Best Airport' by Skytrax several times, and is the first airport in the world to hold the accolade for eight consecutive years.[8][9] It has also been rated as one of the world's cleanest airports and highly rated international transit airports.[10][11] More than 100 airlines operate from the airport, with nonstop or direct flights to destinations in Asia, Oceania, Africa, Europe, the Middle East, and North America.[12]
+
+The airport is located within its namesake district of Changi, at the eastern end of Singapore, approximately 24 kilometres (15 miles) east from Singapore's Downtown Core at the Central Region on a 25-square-kilometre (9.7 sq mi) site.[13] It is the home base of BOC Aviation and Jetstar Asia Airways, as well as the country's flag carrier of Singapore Airlines, its cargo division Singapore Airlines Cargo and its low-cost subsidiary Scoot.[14] SATS is also headquartered at the airport.
+
+With Singapore's strategic location being a favourable destination for high demand layovers, the airport also serves as a focus city for Qantas, as well as the flagship cargo hub for FedEx Express in Asia.[2][15] In 2019, Changi Airport served 68.3 million passengers, making it the 18th busiest airport in the world.[16] The airport is operated by Changi Airport Group, a wholly-owned subsidiary under the purview of the Ministry of Finance of the Government of Singapore. It is served by three runways; all 4 kilometres (2.5 mi) long, and consists of four terminal buildings. A fifth mega-terminal is currently under construction.</textarea>
+                  <section class="form-select" style="margin-top: 1%">
+                      <option value="Define" selected disabled>Create Flashcards</option>
+                  </section>
+                  <div id="loader5" class="loading" style="display: none; margin-top: 1%"></div>
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader5').style.display = 'block'; setTimeout(function(){ document.getElementById('loader5').style.display = 'none'; document.getElementById('deftext5').innerText = 'Flashcards:\n'+
+'\n'+
+'1. What is the IATA code for Singapore Changi Airport? \n'+
+'Answer: SIN\n'+
+'\n'+
+'2. What is the ICAO code for Singapore Changi Airport?\n'+
+'Answer: WSSS\n'+
+'\n'+
+'3. How many times has Singapore Changi Airport been rated as the \'World\'s Best Airport\' by Skytrax?\n'+
+'Answer: Eight times.\n'+
+'\n'+
+'4. What is the size of the Singapore Changi Airport site?\n'+
+'Answer: 25-square-kilometre (9.7 sq mi).\n'+
+'\n'+
+'5. How many airlines operate from Singapore Changi Airport?\n'+
+'Answer: More than 100.'; },1000);">Send request</button>
+                  <textarea readonly id="deftext5" style="margin-top: 1%" class="form-control" cols="10" rows="5"></textarea></div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                  <h3 class="fw-bold" id="flashcards">Create Flashcards</h3>
+                  <div class="mb-2 text-danger small">
+                      <i class="fas fa-users me-2" aria-controls="#picker-editor"></i><span>Prepare your next study session</span>
+                  </div>
+                  <p class="text-muted">Flashcards can be a simple but effective way to improve memory and retention of information. They typically consist of a set of cards, with a question or prompt on one side and an answer on the other side. To extract the essential features from any text and prepare some flashcards, follow these steps: <br><br>
+                      &emsp;1. Select the text you want flashcards of.<br><br>
+                      &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Create Flashcards'.<br><br>
+                      &emsp;3. Open StudyMateAI via the magic sidebar or <a href="#" data-bs-toggle="tooltip" data-bs-title="shortcut: ctrl + shift + y"> your popup.</a><br><br>
+                      &emsp;4. Click 'Send request'.</p>
+              </div>
+          </div>
+
+
       </section>
   </section>
 
   <div class="container">
-      <h1>How to:</h1>
-      <br>
-
-      <div class="container" style="margin-bottom: 1%">
-          <h5>Hey there!<br> Thank you so much for checking out StudyMateAI.<br> We've put a lot of effort into this and hope you are enjoying the extension, and it's capabilities.<br> If you are not sure on how StudyMateAI works or need a showcase of the features, feel free to explore on this page. :)</h5>
-      </div>
      <div class="accordion" id="accordionPanelsStayOpenExample">
-
           <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-heading">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse" aria-expanded="true" aria-controls="panelsStayOpen-collapse">
@@ -233,150 +301,6 @@ As machines become increasingly capable, tasks considered to require 'intelligen
                       <div class="mouse-icon">
                           <i class="fa fa-mouse-pointer"></i>
                       </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFirst">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFirst" aria-expanded="true" aria-controls="panelsStayOpen-collapseFirst">
-                      Get Started
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseFirst" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFirst">
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                      Get Definitions
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body">
-                      <strong>How to use StudyMateAI to get fast and simple explanations.</strong><br>
-                      It is fairly easy: <br><br>
-                      &emsp;1. Select the word you want further explanation on. This could be a single word, a phrase or the name of a concept.<br>
-                      &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Definition'<br>
-                      &emsp;3. Open StudyMateAI via the magic sidebar or your popup (default shortcut: <code>ctrl + shift + y</code>)<br>
-                      &emsp;4. Click 'Send request'
-                      <input type="text" class="form-control" id="pdf-document"
-                             placeholder="DNA" readonly style="margin-top: 1%">
-                      <section class="form-select" style="margin-top: 1%">
-                          <option value="Define" selected disabled>Definition</option>
-                      </section>
-                      <div id="loader1" class="loading" style="display: none; margin-top: 1%"></div>
-                      <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
-                      <textarea readonly id="deftext" style="margin-top: 1%" class="form-control"></textarea>
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                      Summarize text
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
-                      <strong>How to use StudyMateAI to make complex text comprehensive.</strong><br>
-                      It is pretty straight forward:<br><br>
-                      &emsp;1. Select the text you want to (short) summarize. Please note that we can currently handle requests with a <strong>maximum of 1000 words</strong><br>
-                      &emsp;2. Right click and navigate to 'StudyMateAI' and choose 'Summarize Selection' or 'Short Summary'<br>
-                      &emsp;3. Open StudyMateAI via the magic sidebar or your popup (default shortcut: <code>ctrl + shift + x</code>)<br>
-                      &emsp;4. Click 'Send request'
-                      <textarea class="form-control"
-                             readonly style="margin-top: 1%;" cols="100" rows="10">"Artificial intelligence (AI) is intelligence—perceiving, synthesizing, and inferring information—demonstrated by machines, as opposed to intelligence displayed by non-human animals and humans. Example tasks in which this is done include speech recognition, computer vision, translation between (natural) languages, as well as other mappings of inputs.
-
-AI applications include advanced web search engines (e.g., Google Search), recommendation systems (used by YouTube, Amazon and Netflix), understanding human speech (such as Siri and Alexa), self-driving cars (e.g., Waymo), automated decision-making and competing at the highest level in strategic game systems (such as chess and Go).[1]
-
-As machines become increasingly capable, tasks considered to require 'intelligence' are often removed from the definition of AI, a phenomenon known as the AI effect.[2] For instance, optical character recognition is frequently excluded from things considered to be AI,[3] having become a routine technology.[4]
-
-                      Artificial intelligence was founded as an academic discipline in 1956, and in the years since has experienced several waves of optimism,[5][6] followed by disappointment and the loss of funding (known as an 'AI winter'),[7][8] followed by new approaches, success and renewed funding.[6][9] AI research has tried and discarded many different approaches since its founding, including simulating the brain, modeling human problem solving, formal logic, large databases of knowledge and imitating animal behavior. In the first decades of the 21st century, highly mathematical-statistical machine learning has dominated the field, and this technique has proved highly successful, helping to solve many challenging problems throughout industry and academia.[9][10]
-
-                      The various sub-fields of AI research are centered around particular goals and the use of particular tools. The traditional goals of AI research include reasoning, knowledge representation, planning, learning, natural language processing, perception, and the ability to move and manipulate objects.[a] General intelligence (the ability to solve an arbitrary problem) is among the field's long-term goals.[11] To solve these problems, AI researchers have adapted and integrated a wide range of problem-solving techniques – including search and mathematical optimization, formal logic, artificial neural networks, and methods based on statistics, probability and economics. AI also draws upon computer science, psychology, linguistics, philosophy, and many other fields.
-
-                      The field was founded on the assumption that human intelligence 'can be so precisely described that a machine can be made to simulate it'.[b] This raised philosophical arguments about the mind and the ethical consequences of creating artificial beings endowed with human-like intelligence; these issues have previously been explored by myth, fiction and philosophy since antiquity.[13] Computer scientists and philosophers have since suggested that AI may become an existential risk to humanity if its rational capacities are not steered towards beneficial goals.[c]
-
-                      History
-                      Main articles: History of artificial intelligence and Timeline of artificial intelligence
-
-                      Silver didrachma from Crete depicting Talos, an ancient mythical automaton with artificial intelligence
-                      Artificial beings with intelligence appeared as storytelling devices in antiquity,[14] and have been common in fiction, as in Mary Shelley's Frankenstein or Karel Čapek's R.U.R.[15] These characters and their fates raised many of the same issues now discussed in the ethics of artificial intelligence.[16]
-
-                      The study of mechanical or 'formal' reasoning began with philosophers and mathematicians in antiquity. The study of mathematical logic led directly to Alan Turing's theory of computation, which suggested that a machine, by shuffling symbols as simple as '0' and '1', could simulate any conceivable act of mathematical deduction. This insight that digital computers can simulate any process of formal reasoning is known as the Church–Turing thesis.[17] This, along with concurrent discoveries in neurobiology, information theory and cybernetics, led researchers to consider the possibility of building an electronic brain.[18] The first work that is now generally recognized as AI was McCullouch and Pitts' 1943 formal design for Turing-complete 'artificial neurons'.[19]
-
-                      By the 1950s, two visions for how to achieve machine intelligence emerged. One vision, known as Symbolic AI or GOFAI, was to use computers to create a symbolic representation of the world and systems that could reason about the world. Proponents included Allen Newell, Herbert A. Simon, and Marvin Minsky. Closely associated with this approach was the 'heuristic search' approach, which likened intelligence to a problem of exploring a space of possibilities for answers.
-
-                      The second vision, known as the connectionist approach, sought to achieve intelligence through learning. Proponents of this approach, most prominently Frank Rosenblatt, sought to connect Perceptron in ways inspired by connections of neurons.[20] James Manyika and others have compared the two approaches to the mind (Symbolic AI) and the brain (connectionist). Manyika argues that symbolic approaches dominated the push for artificial intelligence in this period, due in part to its connection to intellectual traditions of Descartes, Boole, Gottlob Frege, Bertrand Russell, and others. Connectionist approaches based on cybernetics or artificial neural networks were pushed to the background but have gained new prominence in recent decades.[21]
-
-                      The field of AI research was born at a workshop at Dartmouth College in 1956.[d][24] The attendees became the founders and leaders of AI research.[e] They and their students produced programs that the press described as 'astonishing':[f] computers were learning checkers strategies, solving word problems in algebra, proving logical theorems and speaking English.[g][26]
-
-                      By the middle of the 1960s, research in the U.S. was heavily funded by the Department of Defense[27] and laboratories had been established around the world.[28]
-
-
-                      They had failed to recognize the difficulty of some of the remaining tasks. Progress slowed and in 1974, in response to the criticism of Sir James Lighthill[32] and ongoing pressure from the US Congress to fund more productive projects, both the U.S. and British governments cut off exploratory research in AI. The next few years would later be called an 'AI winter', a period when obtaining funding for AI projects was difficult.[7]
-
-                      In the early 1980s, AI research was revived by the commercial success of expert systems,[33] a form of AI program that simulated the knowledge and analytical skills of human experts. By 1985, the market for AI had reached over a billion dollars. At the same time, Japan's fifth generation computer project inspired the U.S. and British governments to restore funding for academic research.[6] However, beginning with the collapse of the Lisp Machine market in 1987, AI once again fell into disrepute, and a second, longer-lasting winter began.[8]
-
-                      Many researchers began to doubt that the symbolic approach would be able to imitate all the processes of human cognition, especially perception, robotics, learning and pattern recognition. A number of researchers began to look into 'sub-symbolic' approaches to specific AI problems.[34] Robotics researchers, such as Rodney Brooks, rejected symbolic AI and focused on the basic engineering problems that would allow robots to move, survive, and learn their environment.[h]
-
-                      Interest in neural networks and 'connectionism' was revived by Geoffrey Hinton, David Rumelhart and others in the middle of the 1980s.[39] Soft computing tools were developed in the 1980s, such as neural networks, fuzzy systems, Grey system theory, evolutionary computation and many tools drawn from statistics or mathematical optimization.
-
-                      AI gradually restored its reputation in the late 1990s and early 21st century by finding specific solutions to specific problems. The narrow focus allowed researchers to produce verifiable results, exploit more mathematical methods, and collaborate with other fields (such as statistics, economics and mathematics).[40] By 2000, solutions developed by AI researchers were being widely used, although in the 1990s they were rarely described as 'artificial intelligence'.[10]
-
-                      Faster computers, algorithmic improvements, and access to large amounts of data enabled advances in machine learning and perception; data-hungry deep learning methods started to dominate accuracy benchmarks around 2012.[41] According to Bloomberg's Jack Clark, 2015 was a landmark year for artificial intelligence, with the number of software projects that use AI within Google increased from a 'sporadic usage' in 2012 to more than 2,700 projects.[i] He attributed this to an increase in affordable neural networks, due to a rise in cloud computing infrastructure and to an increase in research tools and datasets.[9]
-
-                      In a 2017 survey, one in five companies reported they had 'incorporated AI in some offerings or processes'.[42] The amount of research into AI (measured by total publications) increased by 50% in the years 2015–2019.[43]
-
-                      Numerous academic researchers became concerned that AI was no longer pursuing the original goal of creating versatile, fully intelligent machines. Much of current research involves statistical AI, which is overwhelmingly used to solve specific problems, even highly successful techniques such as deep learning. This concern has led to the subfield of artificial general intelligence (or 'AGI'), which had several well-funded institutions by the 2010s.[11]"</textarea>
-                      <section class="form-select" style="margin-top: 1%">
-                          <option value="Define" selected disabled>Short Summary</option>
-                      </section>
-                      <div id="loader2" class="loading" style="display: none; margin-top: 1%"></div>
-                      <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader2').style.display = 'block'; setTimeout(function(){ document.getElementById('loader2').style.display = 'none'; document.getElementById('deftext2').innerText = ' \n'+
-'\n'+
-'AI is a field of research that studies intelligence demonstrated by machines, such as speech recognition, computer vision, translation, and other mappings of inputs. AI applications include web search engines, recommendation systems, self-driving cars, and competing in strategic game systems. AI was founded in 1956 and has experienced several waves of optimism and disappointment. It has used many approaches, such as simulating the brain, modeling human problem solving, and formal logic. In the 21st century, machine learning has been successful in solving many challenging problems. AI has raised philosophical arguments about the mind and ethical consequences of creating artificial intelligence, and has been explored in myth, fiction, and philosophy since antiquity. AI research has been funded by the US Department of Defense, and the field has grown since the 1950s with the two visions of symbolic AI and connectionist approaches. AI has been used since the 2000s to solve specific problems and is used by one in five companies.'; },1000);">Send request</button>
-                      <textarea readonly id="deftext2" style="margin-top: 1%" class="form-control" rows="7"></textarea>
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                      Create Bulletpoints
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
-                      <strong>How to use StudyMateAI to make complex text comprehensive.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapse">
-                      Answer Questions
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                      Create Flashcards
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
               </div>
           </div>
