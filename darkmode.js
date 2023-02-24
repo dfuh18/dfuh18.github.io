@@ -21,6 +21,15 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     }
     language.style.color = "white";
 
+    if (document.getElementById("invert-0")) { 
+      document.getElementById("invert-0").style.filter = "invert(100%)";
+      document.getElementById("invert-1").style.filter = "invert(100%)";
+      document.getElementById("invert-2").style.filter = "invert(100%)";
+      document.getElementById("invert-3").style.filter = "invert(100%)";
+      document.getElementById("invert-4").style.filter = "invert(100%)";
+      document.getElementById("invert-5").style.filter = "invert(100%)";
+    }
+
     if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "lightslategrey";
     localStorage.setItem("darkMode", "on");
   } else {
@@ -41,6 +50,15 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.getElementById("NOcurrentpagelink").classList.replace('link-secondary', 'link-dark');
     }
     language.style.color = "black";
+
+    if (document.getElementById("invert-0")) { 
+      document.getElementById("invert-0").style.filter = "invert(0)";
+      document.getElementById("invert-1").style.filter = "invert(0)";
+      document.getElementById("invert-2").style.filter = "invert(0)";
+      document.getElementById("invert-3").style.filter = "invert(0)";
+      document.getElementById("invert-4").style.filter = "invert(0)";
+      document.getElementById("invert-5").style.filter = "invert(0)";
+    }
 
     if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff";
     localStorage.setItem("darkMode", "off");
@@ -70,6 +88,15 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("NOcurrentpagelink").classList.replace('link-dark', 'link-secondary');
     }
 
+    if (document.getElementById("invert-0")) { 
+      document.getElementById("invert-0").style.filter = "invert(100%)";
+      document.getElementById("invert-1").style.filter = "invert(100%)";
+      document.getElementById("invert-2").style.filter = "invert(100%)";
+      document.getElementById("invert-3").style.filter = "invert(100%)";
+      document.getElementById("invert-4").style.filter = "invert(100%)";
+      document.getElementById("invert-5").style.filter = "invert(100%)";
+    }
+
     if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "#lightslategrey"; // TODO, not working!
     language.style.color = "white";
     moon.style.color = "white";
@@ -86,6 +113,15 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("difpagelink3").classList.replace('link-secondary', 'link-dark');
     if (document.getElementById("NOcurrentpagelink")) {
       document.getElementById("NOcurrentpagelink").classList.replace('link-secondary', 'link-dark');
+    }
+
+    if (document.getElementById("invert-0")) { 
+      document.getElementById("invert-0").style.filter = "invert(0)";
+      document.getElementById("invert-1").style.filter = "invert(0)";
+      document.getElementById("invert-2").style.filter = "invert(0)";
+      document.getElementById("invert-3").style.filter = "invert(0)";
+      document.getElementById("invert-4").style.filter = "invert(0)";
+      document.getElementById("invert-5").style.filter = "invert(0)";
     }
 
     if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff"; // TODO, not working!
