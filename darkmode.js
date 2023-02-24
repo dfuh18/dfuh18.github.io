@@ -106,7 +106,9 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelector('.fa-moon').style.display = 'none';
     document.querySelector('.fa-sun').style.display = 'inline-block';
     document.querySelectorAll('.text-white').forEach(el => el.classList.replace('text-white', 'text-muted'));
-    document.getElementById("currentpagelink").classList.replace('link-light', 'link-secondary');
+    if (document.getElementById("currentpagelink")) {
+      document.getElementById("currentpagelink").classList.replace('link-light', 'link-secondary');
+    }
     document.getElementById("difpagelink").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink1").classList.replace('link-secondary', 'link-dark');
     document.getElementById("difpagelink2").classList.replace('link-secondary', 'link-dark');
