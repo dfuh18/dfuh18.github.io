@@ -68,7 +68,7 @@
                       <option value="Define" selected disabled>Definition</option>
                   </section>
                   <div id="loader1" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
+                  <button id="Definition" class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
                   <textarea readonly id="deftext" style="margin-top: 1%" class="form-control"></textarea></div>
               <div class="col-md-6 mb-4 mb-md-0">
                   <h3 class="fw-bold" id="definition">Definition</h3>
@@ -136,7 +136,7 @@ As machines become increasingly capable, tasks considered to require 'intelligen
                       <option value="Define" selected disabled>Short Summary</option>
                   </section>
                   <div id="loader2" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader2').style.display = 'block'; setTimeout(function(){ document.getElementById('loader2').style.display = 'none'; document.getElementById('deftext2').innerText = ' \n'+
+                  <button id="Short Summary" class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader2').style.display = 'block'; setTimeout(function(){ document.getElementById('loader2').style.display = 'none'; document.getElementById('deftext2').innerText = ' \n'+
 '\n'+
 'AI is a field of research that studies intelligence demonstrated by machines, such as speech recognition, computer vision, translation, and other mappings of inputs. AI applications include web search engines, recommendation systems, self-driving cars, and competing in strategic game systems. AI was founded in 1956 and has experienced several waves of optimism and disappointment. It has used many approaches, such as simulating the brain, modeling human problem solving, and formal logic. In the 21st century, machine learning has been successful in solving many challenging problems. AI has raised philosophical arguments about the mind and ethical consequences of creating artificial intelligence, and has been explored in myth, fiction, and philosophy since antiquity. AI research has been funded by the US Department of Defense, and the field has grown since the 1950s with the two visions of symbolic AI and connectionist approaches. AI has been used since the 2000s to solve specific problems and is used by one in five companies.'; },1000);">Send request</button>
                   <textarea readonly id="deftext2" style="margin-top: 1%" class="form-control" rows="7"></textarea> </div>
@@ -165,7 +165,7 @@ The history of P. peruviana cultivation in South America can be traced to the In
                       <option value="Bulletpoints" selected disabled>Create Bulletpoints</option>
                   </section>
                   <div id="loader3" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader3').style.display = 'block'; setTimeout(function(){ document.getElementById('loader3').style.display = 'none'; document.getElementById('bulltext').innerText = '- Physalis peruviana is a species of plant in the nightshade family native to Colombia, Ecuador, and Peru. \n- Commonly known as Cape gooseberry, goldenberry, or Peruvian groundcherry.\n- Cultivated by the Inca Empire, and in England and South Africa since the late 18th and early 19th centuries respectively.\n- Widely introduced in the 20th century and now cultivated or grows wild across the world.'; },1000);">Send request</button>
+                  <button id="Create Bulletpoints" class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader3').style.display = 'block'; setTimeout(function(){ document.getElementById('loader3').style.display = 'none'; document.getElementById('bulltext').innerText = '- Physalis peruviana is a species of plant in the nightshade family native to Colombia, Ecuador, and Peru. \n- Commonly known as Cape gooseberry, goldenberry, or Peruvian groundcherry.\n- Cultivated by the Inca Empire, and in England and South Africa since the late 18th and early 19th centuries respectively.\n- Widely introduced in the 20th century and now cultivated or grows wild across the world.'; },1000);">Send request</button>
                   <textarea readonly id="bulltext" style="margin-top: 1%" class="form-control" cols="70" rows="15"></textarea>
               </div>
               <div class="col-md-6 mb-4 mb-md-0">
@@ -191,7 +191,7 @@ The history of P. peruviana cultivation in South America can be traced to the In
                       <option value="Define" selected disabled>Answer Question</option>
                   </section>
                   <div id="loader4" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader4').style.display = 'block'; setTimeout(function(){ document.getElementById('loader4').style.display = 'none'; document.getElementById('deftext4').innerText = '\n'+
+                  <button id="Answer Question" class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader4').style.display = 'block'; setTimeout(function(){ document.getElementById('loader4').style.display = 'none'; document.getElementById('deftext4').innerText = '\n'+
 '\n'+
 'Five Reasons to Start Your New Business Now:\n'+
 '\n'+
@@ -248,7 +248,7 @@ With Singapore's strategic location being a favourable destination for high dema
                       <option value="Define" selected disabled>Create Flashcards</option>
                   </section>
                   <div id="loader5" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader5').style.display = 'block'; setTimeout(function(){ document.getElementById('loader5').style.display = 'none'; document.getElementById('deftext5').innerText = 'Flashcards:\n'+
+                  <button id="Create Flashcards" class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader5').style.display = 'block'; setTimeout(function(){ document.getElementById('loader5').style.display = 'none'; document.getElementById('deftext5').innerText = 'Flashcards:\n'+
 '\n'+
 '1. What is the IATA code for Singapore Changi Airport? \n'+
 'Answer: SIN\n'+
