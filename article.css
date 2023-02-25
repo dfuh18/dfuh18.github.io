@@ -41,6 +41,6 @@ h2 {
     text-decoration: none;
   }
   
-.text-center a:not(:last-child) {
+.text-center-icons a:not(:last-child) {
     margin-right: 3.5%;
 }
