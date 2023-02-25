@@ -30,7 +30,10 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.getElementById("invert-5").style.filter = "invert(100%)";
     }
 
-    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "lightslategrey";
+    if (document.getElementById("custom-hero-bg")){
+      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-light','custom-bg-hero-dark');
+    };
+    
     localStorage.setItem("darkMode", "on");
   } else {
     moon.style.display = 'none';
@@ -60,7 +63,10 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.getElementById("invert-5").style.filter = "invert(0)";
     }
 
-    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff";
+    if (document.getElementById("custom-hero-bg")){
+      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-dark','custom-bg-hero-light');
+    };
+
     localStorage.setItem("darkMode", "off");
   }
   // Toggle dark mode
@@ -97,7 +103,10 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("invert-5").style.filter = "invert(100%)";
     }
 
-    if (document.getElementById("download") != null) document.getElementById("download").style.backgroundColor = "#lightslategrey"; // TODO, not working!
+    if (document.getElementById("custom-hero-bg")){
+      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-light','custom-bg-hero-dark');
+    };
+
     language.style.color = "white";
     moon.style.color = "white";
 
@@ -126,7 +135,10 @@ document.addEventListener("DOMContentLoaded", function(){
       document.getElementById("invert-5").style.filter = "invert(0)";
     }
 
-    if (document.getElementById("download") != null)  document.getElementById("download").style.backgroundColor = "#edf5ff"; // TODO, not working!
+    if (document.getElementById("custom-hero-bg")){
+      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-dark','custom-bg-hero-light');
+    };
+
     language.style.color = "black";
     sun.style.color = "black";
   }

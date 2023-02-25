@@ -102,3 +102,11 @@ h1 {
   color: inherit; /* inherit the color from the parent element */
   font-weight: normal; /* reset the font weight */
 }
+
+.custom-bg-hero-light{
+  background-color:#edf5ff;
+}
+
+.custom-bg-hero-dark{
+  background-color:lightslategrey;
+}
