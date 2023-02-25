@@ -1,8 +1,46 @@
 p {
-    font-size: 150%;
+    font-size: 24px;
 }
 
+h2 + p {
+    font-size: 24px;
+}
+    
 h1{
-    font-size: 300%;
+    font-size: 350%;
+    font-weight: bold;
 }
 
+.masthead {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.meta {
+    font-size: 140%;
+    font-style: oblique;
+}
+
+a {
+/*text-decoration: none; /* remove underline */
+color: inherit; /* inherit the color from the parent element */
+font-weight: normal; /* reset the font weight */
+}
+
+h2 {
+    padding-top:7.5%;
+    padding-bottom: 3.5% ;
+}
+
+.caption{
+    text-align: center;
+    padding-bottom: 3.5%;
+}
+
+.social-icon {
+    text-decoration: none;
+  }
+  
+.text-center a:not(:last-child) {
+    margin-right: 3.5%;
+}
