@@ -122,8 +122,8 @@ h1 {
   #blogs {
     position: absolute;
     left: 0;
-    top: 25vh;
-    margin-left: 2%;
+    top: 17vh;
+    margin-left: 0%;
   }
 }
 
@@ -131,7 +131,7 @@ h1 {
   #blogs {
     position: absolute;
     left: 0;
-    top: 30vh;
+    top: 25vh;
     margin-left: 0%;
   }
 }
