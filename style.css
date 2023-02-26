@@ -118,6 +118,26 @@ h1 {
   margin-left: 2%;
 }
 
+@media (max-width: 1440px) {
+  #blogs {
+    position: absolute;
+    left: 0;
+    top: 25vh;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 463px) {
+  #blogs {
+    position: absolute;
+    left: 0;
+    top: 30vh;
+    margin-left: 0%;
+  }
+}
+
+
+
 .dropdown-menu li a {
   white-space: nowrap;
   overflow: hidden;
@@ -126,3 +146,6 @@ h1 {
   padding: 10px;
 }
 
+#impressum{
+font-size: smaller;
+}
