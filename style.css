@@ -110,3 +110,19 @@ h1 {
 .custom-bg-hero-dark{
   background-color:lightslategrey;
 }
+
+#blogs{
+  position: fixed;
+  left: 0;
+  top:10%;
+  margin-left: 2%;
+}
+
+.dropdown-menu li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px; /* Set to the desired maximum width */
+  padding: 10px;
+}
+

@@ -2,10 +2,12 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
   const moon = this.querySelector('.fa-moon');
   const sun = this.querySelector('.fa-sun');
   const language = document.getElementById('language');
+  const blogsIcon = document.getElementById('blogs-icon');
   if (moon.style.display === 'none') {
     sun.style.display = 'none';
     moon.style.display = 'inline-block';
     moon.style.color = "white";
+    blogsIcon.style.color = "white";
     // store the state in localStorage
     document.querySelectorAll('.text-muted').forEach(el => el.classList.replace('text-muted', 'text-white'));
     //change navbar color
@@ -53,6 +55,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.getElementById("NOcurrentpagelink").classList.replace('link-secondary', 'link-dark');
     }
     language.style.color = "black";
+    blogsIcon.style.color = "black";
 
     if (document.getElementById("invert-0")) { 
       document.getElementById("invert-0").style.filter = "invert(0)";
@@ -77,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const moon = this.querySelector('.fa-moon');
   const sun = this.querySelector('.fa-sun');
   const language = document.getElementById('language');
+  const blogsIcon = document.getElementById('blogs-icon');
   let darkMode = localStorage.getItem("darkMode");
   if(darkMode === "on"){
     document.body.classList.add("dark-mode");
@@ -109,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     language.style.color = "white";
     moon.style.color = "white";
+    blogsIcon.style.color = "white";
 
   }else{
     document.body.classList.remove("dark-mode");
@@ -140,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function(){
     };
 
     language.style.color = "black";
+    blogsIcon.style.color = "black";
     sun.style.color = "black";
   }
 });
