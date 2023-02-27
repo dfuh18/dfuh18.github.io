@@ -62,14 +62,14 @@
           <h2 class="fw-bold mb-5 text-center">How to use StudyMateAI's Features<br></h2>
           <div class="row gx-lg-5 mb-5 align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
-                  <textarea id="Definition" type="text" class="form-control"
+                  <textarea id="Definition" type="text" class="form-control" rows="1"
                             readonly style="margin-top: 1%">DNA</textarea>
                   <section class="form-select" style="margin-top: 1%">
                       <option value="Define" selected disabled>Definition</option>
                   </section>
                   <div id="loader1" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').innerText = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
-                  <textarea readonly id="deftext" style="margin-top: 1%" class="form-control"></textarea></div>
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader1').style.display = 'block'; setTimeout(function(){ document.getElementById('loader1').style.display = 'none'; document.getElementById('deftext').value = 'DNA stands for deoxyribonucleic acid, and is a molecule that contains the genetic instructions used in the development and functioning of all living organisms. It is composed of two strands of nucleotides twisted together into a double helix.'; },1000);">Send request</button>
+                  <textarea readonly id="deftext" style="margin-top: 1%" class="form-control" rows="3"></textarea></div>
               <div class="col-md-6 mb-4 mb-md-0">
                   <h3 class="fw-bold" id="definition">Definition</h3>
                   <div class="mb-2">
@@ -88,7 +88,7 @@
           <div class="row gx-lg-5 mb-5 flex-lg-row-reverse align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
               <textarea id="Short Summary" class="form-control"
-                        readonly style="margin-top: 1%;" cols="100" rows="10">"Artificial intelligence (AI) is intelligence—perceiving, synthesizing, and inferring information—demonstrated by machines, as opposed to intelligence displayed by non-human animals and humans. Example tasks in which this is done include speech recognition, computer vision, translation between (natural) languages, as well as other mappings of inputs.
+                        readonly style="margin-top: 1%;" rows="10">"Artificial intelligence (AI) is intelligence—perceiving, synthesizing, and inferring information—demonstrated by machines, as opposed to intelligence displayed by non-human animals and humans. Example tasks in which this is done include speech recognition, computer vision, translation between (natural) languages, as well as other mappings of inputs.
 
 AI applications include advanced web search engines (e.g., Google Search), recommendation systems (used by YouTube, Amazon and Netflix), understanding human speech (such as Siri and Alexa), self-driving cars (e.g., Waymo), automated decision-making and competing at the highest level in strategic game systems (such as chess and Go).[1]
 
@@ -136,8 +136,7 @@ As machines become increasingly capable, tasks considered to require 'intelligen
                       <option value="Define" selected disabled>Short Summary</option>
                   </section>
                   <div id="loader2" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader2').style.display = 'block'; setTimeout(function(){ document.getElementById('loader2').style.display = 'none'; document.getElementById('deftext2').innerText = ' \n'+
-'\n'+
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader2').style.display = 'block'; setTimeout(function(){ document.getElementById('loader2').style.display = 'none'; document.getElementById('deftext2').value = 
 'AI is a field of research that studies intelligence demonstrated by machines, such as speech recognition, computer vision, translation, and other mappings of inputs. AI applications include web search engines, recommendation systems, self-driving cars, and competing in strategic game systems. AI was founded in 1956 and has experienced several waves of optimism and disappointment. It has used many approaches, such as simulating the brain, modeling human problem solving, and formal logic. In the 21st century, machine learning has been successful in solving many challenging problems. AI has raised philosophical arguments about the mind and ethical consequences of creating artificial intelligence, and has been explored in myth, fiction, and philosophy since antiquity. AI research has been funded by the US Department of Defense, and the field has grown since the 1950s with the two visions of symbolic AI and connectionist approaches. AI has been used since the 2000s to solve specific problems and is used by one in five companies.'; },1000);">Send request</button>
                   <textarea readonly id="deftext2" style="margin-top: 1%" class="form-control" rows="7"></textarea> </div>
               <div class="col-md-6 mb-4 mb-md-0">
@@ -158,15 +157,15 @@ As machines become increasingly capable, tasks considered to require 'intelligen
           <div class="row gx-lg-5 mb-5 align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
                   <textarea id="Create Bulletpoints" type="text" class="form-control"
-                            readonly style="margin-top: 1%" cols="100" rows="10">Physalis peruviana is a species of plant in the nightshade family (Solanaceae) native to Colombia, Ecuador and Peru. It is commonly known as Cape gooseberry, goldenberry or Peruvian groundcherry,[2][3][4][5] as poha in Hawaii, and as Harankash in Egypt, while in its countries of origin it is called aguaymanto, uvilla or uchuva, in addition to numerous indigenous and regional names.
+                            readonly style="margin-top: 1%" rows="10">Physalis peruviana is a species of plant in the nightshade family (Solanaceae) native to Colombia, Ecuador and Peru. It is commonly known as Cape gooseberry, goldenberry or Peruvian groundcherry,[2][3][4][5] as poha in Hawaii, and as Harankash in Egypt, while in its countries of origin it is called aguaymanto, uvilla or uchuva, in addition to numerous indigenous and regional names.
 
 The history of P. peruviana cultivation in South America can be traced to the Inca Empire.[6][7] It has been cultivated in England since the late 18th century, and in South Africa in the Cape of Good Hope since at least the start of the 19th century.[2] Widely introduced in the 20th century, P. peruviana is now cultivated or grows wild across the world in temperate and tropical regions.[3]</textarea>
                   <section class="form-select" style="margin-top: 1%">
                       <option value="Bulletpoints" selected disabled>Create Bulletpoints</option>
                   </section>
                   <div id="loader3" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader3').style.display = 'block'; setTimeout(function(){ document.getElementById('loader3').style.display = 'none'; document.getElementById('bulltext').innerText = '- Physalis peruviana is a species of plant in the nightshade family native to Colombia, Ecuador, and Peru. \n- Commonly known as Cape gooseberry, goldenberry, or Peruvian groundcherry.\n- Cultivated by the Inca Empire, and in England and South Africa since the late 18th and early 19th centuries respectively.\n- Widely introduced in the 20th century and now cultivated or grows wild across the world.'; },1000);">Send request</button>
-                  <textarea readonly id="bulltext" style="margin-top: 1%" class="form-control" cols="70" rows="15"></textarea>
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader3').style.display = 'block'; setTimeout(function(){ document.getElementById('loader3').style.display = 'none'; document.getElementById('bulltext').value = '- Physalis peruviana is a species of plant in the nightshade family native to Colombia, Ecuador, and Peru. \n- Commonly known as Cape gooseberry, goldenberry, or Peruvian groundcherry.\n- Cultivated by the Inca Empire, and in England and South Africa since the late 18th and early 19th centuries respectively.\n- Widely introduced in the 20th century and now cultivated or grows wild across the world.'; },1000);">Send request</button>
+                  <textarea readonly id="bulltext" style="margin-top: 1%" class="form-control" rows="7"></textarea>
               </div>
               <div class="col-md-6 mb-4 mb-md-0">
                   <h3 class="fw-bold" id="bulletpoints">Bulletpoints</h3>
@@ -191,8 +190,7 @@ The history of P. peruviana cultivation in South America can be traced to the In
                       <option value="Define" selected disabled>Answer Question</option>
                   </section>
                   <div id="loader4" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader4').style.display = 'block'; setTimeout(function(){ document.getElementById('loader4').style.display = 'none'; document.getElementById('deftext4').innerText = '\n'+
-'\n'+
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader4').style.display = 'block'; setTimeout(function(){ document.getElementById('loader4').style.display = 'none'; document.getElementById('deftext4').value = 
 'Five Reasons to Start Your New Business Now:\n'+
 '\n'+
 '1. The Economy is Recovering: The economy is improving, which means there is more money available to fund new businesses.\n'+
@@ -238,7 +236,7 @@ The history of P. peruviana cultivation in South America can be traced to the In
 
           <div class="row gx-lg-5 mb-5 align-items-center">
               <div class="col-md-6 mb-4 mb-md-0">
-                  <textarea id="Create Flashcards" type="text" class="form-control" cols="50" rows="10"
+                  <textarea id="Create Flashcards" type="text" class="form-control" rows="10"
                             readonly style="margin-top: 1%">Singapore Changi Airport, commonly known as Changi Airport (IATA: SIN, ICAO: WSSS), is a major international airport that serves Singapore, and is one of the largest transportation hubs in Asia. As one of the world's busiest airports by international passenger and cargo traffic, it has been rated as the 'World's Best Airport' by Skytrax several times, and is the first airport in the world to hold the accolade for eight consecutive years.[8][9] It has also been rated as one of the world's cleanest airports and highly rated international transit airports.[10][11] More than 100 airlines operate from the airport, with nonstop or direct flights to destinations in Asia, Oceania, Africa, Europe, the Middle East, and North America.[12]
 
 The airport is located within its namesake district of Changi, at the eastern end of Singapore, approximately 24 kilometres (15 miles) east from Singapore's Downtown Core at the Central Region on a 25-square-kilometre (9.7 sq mi) site.[13] It is the home base of BOC Aviation and Jetstar Asia Airways, as well as the country's flag carrier of Singapore Airlines, its cargo division Singapore Airlines Cargo and its low-cost subsidiary Scoot.[14] SATS is also headquartered at the airport.
@@ -248,8 +246,7 @@ With Singapore's strategic location being a favourable destination for high dema
                       <option value="Define" selected disabled>Create Flashcards</option>
                   </section>
                   <div id="loader5" class="loading" style="display: none; margin-top: 1%"></div>
-                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader5').style.display = 'block'; setTimeout(function(){ document.getElementById('loader5').style.display = 'none'; document.getElementById('deftext5').innerText = 'Flashcards:\n'+
-'\n'+
+                  <button class="btn btn-secondary" style="margin-top: 1%" onclick="document.getElementById('loader5').style.display = 'block'; setTimeout(function(){ document.getElementById('loader5').style.display = 'none'; document.getElementById('deftext5').value =
 '1. What is the IATA code for Singapore Changi Airport? \n'+
 'Answer: SIN\n'+
 '\n'+
@@ -264,7 +261,7 @@ With Singapore's strategic location being a favourable destination for high dema
 '\n'+
 '5. How many airlines operate from Singapore Changi Airport?\n'+
 'Answer: More than 100.'; },1000);">Send request</button>
-                  <textarea readonly id="deftext5" style="margin-top: 1%" class="form-control" cols="10" rows="5"></textarea></div>
+                  <textarea readonly id="deftext5" style="margin-top: 1%" class="form-control" rows="7"></textarea></div>
               <div class="col-md-6 mb-4 mb-md-0">
                   <h3 class="fw-bold" id="flashcards">Create Flashcards</h3>
                   <div class="mb-2">
