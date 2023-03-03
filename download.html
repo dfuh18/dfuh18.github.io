@@ -20,6 +20,23 @@
             'analytics_storage': 'denied'
         });
     </script>
+    <!-- Event snippet for Klick auf externen Link conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11108704479/5S9yCPC6w48YEN_BhbEp',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -100,7 +117,7 @@
         <h1 class="display-4 fw-bold lh-1">Download StudyMateAI for Chrome/Edge/Opera</h1>
        <p class="lead">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick='window.open("https://chrome.google.com/webstore/detail/studymateai/ojdbfphobphdlgloniofafojolaalnlm")'>Download</button>
+          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick='window.open("https://chrome.google.com/webstore/detail/studymateai/ojdbfphobphdlgloniofafojolaalnlm"); gtag_report_conversion()'>Download</button>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -116,7 +133,7 @@
             "        <h1 class=\"display-4 fw-bold lh-1\">Download StudyMateAI for Firefox</h1>\n" +
             "        <p class=\"lead\">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>\n" +
             "        <div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\">\n" +
-            "          <button type=\"button\" class=\"btn btn-secondary btn-lg px-4 me-md-2 fw-bold\">Download</button>\n" +
+            "          <button type=\"button\" class=\"btn btn-secondary btn-lg px-4 me-md-2 fw-bold\" onclick='gtag_report_conversion()'>Download</button>\n" +
             "        </div>\n" +
             "      </div>\n" +
             "      <div class=\"col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg\">\n" +
