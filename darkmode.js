@@ -33,7 +33,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     }
 
     if (document.getElementById("custom-hero-bg")){
-      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-light','custom-bg-hero-dark');
+      document.querySelectorAll('.custom-bg-hero-light').forEach(el => el.classList.replace('custom-bg-hero-light', 'custom-bg-hero-dark'));
     };
     
     localStorage.setItem("darkMode", "on");
@@ -67,7 +67,7 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
     }
 
     if (document.getElementById("custom-hero-bg")){
-      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-dark','custom-bg-hero-light');
+      document.querySelectorAll('.custom-bg-hero-dark').forEach(el => el.classList.replace('custom-bg-hero-dark','custom-bg-hero-light'));
     };
 
     localStorage.setItem("darkMode", "off");
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     if (document.getElementById("custom-hero-bg")){
-      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-light','custom-bg-hero-dark');
+      document.querySelectorAll('.custom-bg-hero-light').forEach(el => el.classList.replace('custom-bg-hero-light', 'custom-bg-hero-dark'));
     };
 
     language.style.color = "white";
@@ -141,9 +141,9 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     if (document.getElementById("custom-hero-bg")){
-      document.getElementById("custom-hero-bg").classList.replace('custom-bg-hero-dark','custom-bg-hero-light');
+      document.querySelectorAll('.custom-bg-hero-dark').forEach(el => el.classList.replace('custom-bg-hero-dark','custom-bg-hero-light'));
     };
-
+    
     language.style.color = "black";
     blogsIcon.style.color = "black";
     sun.style.color = "black";
