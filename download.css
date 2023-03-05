@@ -1,0 +1,10 @@
+.firefox-only {
+    display: none;
+  }
+  
+  @-moz-document url-prefix() {
+    .firefox-only {
+      display: flex;
+    }
+  }
+  

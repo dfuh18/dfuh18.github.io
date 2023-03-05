@@ -69,6 +69,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           crossorigin="anonymous" />
     <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="download.css">
 </head>
 
 <header class="p-3 mb-3 ">
@@ -127,24 +128,23 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
     </div>
   </div>
-<script>
-    if (/Firefox/.test(navigator.userAgent)) {
-        document.write("<div class=\"container my-5\">\n" +
-            "    <div class=\"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg\" style=\"background-color:#edf5ff;\" id=\'download\'>\n" +
-            "      <div class=\"col-lg-7 p-3 p-lg-5 pt-lg-3\">\n" +
-            "        <h1 class=\"display-4 fw-bold lh-1\">Download StudyMateAI for Firefox</h1>\n" +
-            "        <p class=\"lead\">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>\n" +
-            "        <div class=\"d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3\">\n" +
-            "          <button id=\"download-btn\" type=\"button\" class=\"btn btn-secondary btn-lg px-4 me-md-2 fw-bold\" onclick='gtag_report_conversion()'>Download</button>\n" +
-            "        </div>\n" +
-            "      </div>\n" +
-            "      <div class=\"col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg\">\n" +
-            "          <img class=\"rounded-lg-3 image-border-light\" src=\"pngs/studym8 explore our functions.webp\" alt=\"\" width=\"405\">\n" +
-            "      </div>\n" +
-            "    </div>\n" +
-            "  </div>");
-    }
-</script>
+
+
+  <div class="container my-5">
+    <div id="custom-hero-bg" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg custom-bg-hero-light firefox-only">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Download StudyMateAI for Firefox</h1>
+       <p class="lead">Summarize texts, create flashcards, get definitions explained, and even answer questions, all with the help of an advanced language processing model. So if you want to study smarter, not harder, give StudyMateAI a try and see how it can transform the way you learn.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button id="download-btn" type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick='window.open("https://addons.mozilla.org/en-US/firefox/addon/studymateai/"); gtag_report_conversion()'>Download</button>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3 image-border-light" src="pngs/studym8 explore our functions.webp" alt="" width="405">
+      </div>
+    </div>
+  </div>
+
 
 <div id="blogs" class="text-center">
     <p style="margin: 2px"><b>studym8ai Blog</b></p> 
