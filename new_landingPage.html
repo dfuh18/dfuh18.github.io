@@ -101,7 +101,22 @@
     <h1 class="display-4 fw-bold">Simple but powerful</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Study-assistence while browsing</p>
-      <button id="download-btn" type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick='window.open("https://chrome.google.com/webstore/detail/studymateai/ojdbfphobphdlgloniofafojolaalnlm"); gtag_report_conversion()'>Download</button>
+      
+      <button id="download-btn" type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold" onclick='openExtension(); gtag_report_conversion()'>Download</button>
+      
+
+<script>
+function openExtension() {
+  if (navigator.userAgent.search("Firefox") > -1) {
+    // If the user is using Firefox, change the link to the Firefox extension URL
+    window.open("https://addons.mozilla.org/firefox/addon/studymateai/");
+  } else {
+    // Otherwise, use the original link for other browsers
+    window.open("https://chrome.google.com/webstore/detail/studymateai/ojdbfphobphdlgloniofafojolaalnlm");
+  }
+}
+</script>
+
       <BR></BR>
     </div>
 
