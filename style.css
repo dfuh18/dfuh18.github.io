@@ -149,3 +149,11 @@ h1 {
 #impressum{
 font-size: smaller;
 }
+
+#sidebar{
+  position: absolute;
+  top: 550px;
+  right: 400px;
+
+  z-index: 5;
+}

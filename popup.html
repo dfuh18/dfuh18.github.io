@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>StudyMateAI</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Link to Font Awesome library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- Link Shepherd CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css"/>
+  <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Page Title -->
+  <div class="container">
+    <div><img src="pngs/StudyMateAI-Logo.webp" width="100" height="100" style="margin: auto; display: block;" > </div>
+    <h1>StudyMateAI</h1>
+    <br>
+    <br>
+  </div>
+  <!-- Content Section -->
+  <div class="container">
+    <div id="liveAlertPlaceholder"></div>
+    <!-- Alert box with disclaimer -->
+    <div class="form-group">
+      <h5 id="h51">Provide context and select desired function:</h5>
+      <input type="text" class="form-control" id="pdf-document"
+        placeholder="Insert text here, or mark text+rightclick"></input>
+      <div><br></div>
+      <div class="container">
+        <div class="row">
+          <div class="col"><select id="action" class="form-select" aria-label="Default select example">
+              <option id="defselect" disabled selected>Select Function</option>
+              <option value="Define">Definition</option>
+              <option id="Summarytxt" value="Summarize">Summarize</option>
+              <option id="ShortSummarytxt" value="Summarize short">Short Summary</option>
+              <option id="SummaryBPtxt" value="Summarize in bullet points">Summarize in Bullet Points</option>
+              <option id="Qtxt" value="Answer Question">Answer Question</option>
+              <option id="Flashcardstxt" value="Create Flashcards">Create Flashcard</option>
+            </select></div>
+          <div class="col"><label for="action" id="selected-option"></label></div>
+        </div>
+        <div></div>
+        <br>
+        <button id="process-button" class="btn btn-secondary mt-3">Send Request</button>
+        <div></div>
+        <br>
+        <div id="loader" class="loading" style="display: none;"></div>
+        <br>
+        <div></div>
+        <h5 id="h52">Generated output by ChatGPT:</h5>
+        <textarea class="form-control" id="answer-promt" rows="10" readonly></textarea>
+        <button class="btn btn-secondary mt-3" id="copybtn">Copy Output</button>
+      </div>
+      
+</body>
+
+<!-- Link to your custom JavaScript -->
+<script src="/darkmode.js"></script>
+<script src=jquery.js></script>
+<script src="bootstrap.js"></script>
+</html>
